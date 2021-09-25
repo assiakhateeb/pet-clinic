@@ -3,13 +3,13 @@ pipeline {
     stages {
         stage('Clone GitHub Repositry') {
             steps {
-	        # Git step. It performs a clone from the petClinic repository. 
+	        // Git step. It performs a clone from the petClinic repository. 
                 git branch: 'main', url: 'https://github.com/spring-projects/spring-petclinic' 
             }
         }
 	stage('Change current directory') { 
 	    steps {
-	        # cd spring-petclinic
+	        // cd spring-petclinic
 	    	dir('spring-petclinic') {
                    // some block
                 }
@@ -17,7 +17,7 @@ pipeline {
 	}
 	stage('Last Stage') {
 	    steps {
-	    # ./mvnw package
+	    // ./mvnw package
 	        script{
 		    "./mvnw package"
 		}

@@ -1,1 +1,5 @@
-echo '111'
+pipeline {
+
+
+
+}

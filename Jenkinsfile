@@ -13,5 +13,12 @@ pipeline {
                 }
 	    }
 	}
+	stage('Last Stage') {
+	    steps {
+	        script{
+		    "./mvnw package"
+		}
+	    }
+	}
     }
 }

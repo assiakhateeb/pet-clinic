@@ -1,5 +1,5 @@
 pipeline {
-    agent 'slave' 
+    agent { label 'slave' }
     stages {
         stage('Clone GitHub Repositry') {
             steps {

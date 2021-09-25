@@ -6,5 +6,12 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/spring-projects/spring-petclinic' 
             }
         }
+	stage('Change current directory') { 
+	    steps {
+	    	dir('spring-petclinic') {
+                   // some block
+                }
+	    }
+	}
     }
 }
